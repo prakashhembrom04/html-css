@@ -1,0 +1,868 @@
+1
+00:00:01,350 --> 00:00:04,430
+Let's now see how we can run into problems
+
+2
+00:00:04,430 --> 00:00:08,653
+with the default box model, and also how we can fix it.
+
+3
+00:00:10,200 --> 00:00:13,750
+So what we're gonna do now is to finally fix the spacing
+
+4
+00:00:13,750 --> 00:00:16,329
+of this sidebar here a little bit.
+
+5
+00:00:16,329 --> 00:00:20,190
+So currently, there are no paddings, as you can see here,
+
+6
+00:00:20,190 --> 00:00:23,680
+and this is just a margin, but not a padding.
+
+7
+00:00:23,680 --> 00:00:25,280
+So that's not really right,
+
+8
+00:00:25,280 --> 00:00:29,120
+so let's fix it and then we will run into a problem
+
+9
+00:00:29,120 --> 00:00:31,930
+and then we will solve it.
+
+10
+00:00:31,930 --> 00:00:33,050
+All right?
+
+11
+00:00:33,050 --> 00:00:37,510
+So we are actually done here with the code of the layout.
+
+12
+00:00:37,510 --> 00:00:41,543
+So let's go to the aside that we have at the top,
+
+13
+00:00:43,020 --> 00:00:47,020
+because this code we will write now should actually apply
+
+14
+00:00:47,020 --> 00:00:48,663
+to all the layout methods.
+
+15
+00:00:50,010 --> 00:00:53,320
+So let's get rid of these comments here
+
+16
+00:00:53,320 --> 00:00:55,470
+and also of this width,
+
+17
+00:00:55,470 --> 00:00:59,063
+because we already have it defined by the end of the file.
+
+18
+00:01:00,360 --> 00:01:02,210
+So let's give it a save.
+
+19
+00:01:02,210 --> 00:01:05,600
+And now actually the reason why there is some space here
+
+20
+00:01:05,600 --> 00:01:07,858
+is because right at the very beginning,
+
+21
+00:01:07,858 --> 00:01:11,750
+we added some margin here to the ul,
+
+22
+00:01:11,750 --> 00:01:13,520
+so to this unordered list,
+
+23
+00:01:13,520 --> 00:01:16,330
+because otherwise the bullet points disappeared.
+
+24
+00:01:16,330 --> 00:01:17,890
+Remember that.
+
+25
+00:01:17,890 --> 00:01:21,460
+But now we actually don't want that here.
+
+26
+00:01:21,460 --> 00:01:23,100
+So there should be no margin
+
+27
+00:01:23,100 --> 00:01:26,563
+because that just doesn't make no sense in that case.
+
+28
+00:01:27,620 --> 00:01:31,422
+So here we have that ul and that ol.
+
+29
+00:01:31,422 --> 00:01:35,100
+And so here's the margin left of 50 that I just mentioned.
+
+30
+00:01:35,100 --> 00:01:39,573
+So let's see in our HTML, if this list here has some class.
+
+31
+00:01:42,190 --> 00:01:43,060
+Yeah, it does.
+
+32
+00:01:43,060 --> 00:01:45,183
+So it's the related class.
+
+33
+00:01:46,330 --> 00:01:47,473
+So let's copy that.
+
+34
+00:01:48,360 --> 00:01:50,543
+And maybe it's already somewhere.
+
+35
+00:01:51,490 --> 00:01:52,640
+Yeah, here.
+
+36
+00:01:52,640 --> 00:01:55,110
+So related has a list style of none.
+
+37
+00:01:55,110 --> 00:01:57,793
+And let's say that it should have no margin.
+
+38
+00:01:58,920 --> 00:01:59,890
+Okay.
+
+39
+00:01:59,890 --> 00:02:04,890
+So in the ul selector, we have margin left set to something,
+
+40
+00:02:05,130 --> 00:02:08,233
+but we can override all the margins at the same time.
+
+41
+00:02:09,139 --> 00:02:13,510
+Left and set it to zero.
+
+42
+00:02:13,510 --> 00:02:16,383
+Okay. So that's better for now.
+
+43
+00:02:17,550 --> 00:02:21,453
+And so let's now go back and add some padding.
+
+44
+00:02:22,730 --> 00:02:23,780
+Right?
+
+45
+00:02:23,780 --> 00:02:26,530
+So when we want space inside of an element,
+
+46
+00:02:26,530 --> 00:02:28,290
+we should not use margin.
+
+47
+00:02:28,290 --> 00:02:31,200
+And so that's why we just remove it, but we still,
+
+48
+00:02:31,200 --> 00:02:34,380
+of course, want some space inside of this aside.
+
+49
+00:02:34,380 --> 00:02:37,663
+And so therefore we will want to add some padding.
+
+50
+00:02:38,860 --> 00:02:42,780
+So, let's say 40 pixels.
+
+51
+00:02:42,780 --> 00:02:46,750
+And now, as I saved this, watch what happens.
+
+52
+00:02:46,750 --> 00:02:51,750
+So I'm saving it now and now it suddenly disappeared.
+
+53
+00:02:52,480 --> 00:02:54,393
+So the whole site is gone.
+
+54
+00:02:55,270 --> 00:02:57,250
+So let's see what happened.
+
+55
+00:02:57,250 --> 00:02:59,140
+And the reason for that is
+
+56
+00:02:59,140 --> 00:03:01,783
+that now the elements became too big.
+
+57
+00:03:03,080 --> 00:03:04,913
+So let's inspect that.
+
+58
+00:03:06,030 --> 00:03:06,950
+And so
+
+59
+00:03:10,360 --> 00:03:11,470
+checking the site.
+
+60
+00:03:12,440 --> 00:03:16,840
+So we defined it at 300 pixels of width, right?
+
+61
+00:03:16,840 --> 00:03:20,680
+But then the padding of 40 pixels that we just added
+
+62
+00:03:20,680 --> 00:03:22,870
+gets added to the total width,
+
+63
+00:03:22,870 --> 00:03:25,430
+simply because that is the default behavior
+
+64
+00:03:25,430 --> 00:03:26,990
+of the box model.
+
+65
+00:03:26,990 --> 00:03:31,160
+And so now the total width of this element is 380,
+
+66
+00:03:31,160 --> 00:03:35,393
+which does no longer fit between the width of this article.
+
+67
+00:03:36,520 --> 00:03:41,520
+So the article is 825 pixels wide.
+
+68
+00:03:41,640 --> 00:03:44,550
+And if you watch closely up here in this corner,
+
+69
+00:03:44,550 --> 00:03:46,060
+as I now hover it,
+
+70
+00:03:46,060 --> 00:03:48,260
+you see that it is a bit wider
+
+71
+00:03:48,260 --> 00:03:51,750
+than there would have been space to fix the aside.
+
+72
+00:03:51,750 --> 00:03:52,930
+Right?
+
+73
+00:03:52,930 --> 00:03:55,670
+So, how do we fix this problem?
+
+74
+00:03:55,670 --> 00:04:00,120
+Should we now manually change the size of this aside here
+
+75
+00:04:00,120 --> 00:04:02,380
+in order to account for the padding?
+
+76
+00:04:02,380 --> 00:04:04,113
+Or is there maybe another way?
+
+77
+00:04:05,080 --> 00:04:07,610
+Well, indeed there is a better way.
+
+78
+00:04:07,610 --> 00:04:11,210
+And so now it's time to leave behind the default behavior
+
+79
+00:04:11,210 --> 00:04:12,580
+of the box model.
+
+80
+00:04:12,580 --> 00:04:14,900
+And so let's now quickly take a look
+
+81
+00:04:14,900 --> 00:04:18,459
+of how the other version of the box model works
+
+82
+00:04:18,459 --> 00:04:19,713
+and what it looks like.
+
+83
+00:04:21,149 --> 00:04:22,610
+And just to remember,
+
+84
+00:04:22,610 --> 00:04:25,300
+this is the default way of the box model
+
+85
+00:04:25,300 --> 00:04:29,490
+of calculating the elements widths and the heights.
+
+86
+00:04:29,490 --> 00:04:32,100
+So as we've seen in practice, many times,
+
+87
+00:04:32,100 --> 00:04:35,320
+whenever we specify a height or a width,
+
+88
+00:04:35,320 --> 00:04:37,940
+then the box model will add the border
+
+89
+00:04:37,940 --> 00:04:40,850
+and the padding on top of that.
+
+90
+00:04:40,850 --> 00:04:43,537
+And so that's exactly what created the situation
+
+91
+00:04:43,537 --> 00:04:47,270
+that we found ourselves in now on our page.
+
+92
+00:04:47,270 --> 00:04:49,750
+So in our layout, right?
+
+93
+00:04:49,750 --> 00:04:53,240
+So the sidebar grew too big because of the padding.
+
+94
+00:04:53,240 --> 00:04:57,750
+And so it no longer fit close to the article.
+
+95
+00:04:57,750 --> 00:05:02,070
+So wouldn't it be nice if we simply defined a certain height
+
+96
+00:05:02,070 --> 00:05:03,700
+or a certain width,
+
+97
+00:05:03,700 --> 00:05:08,060
+and then the element would simply be exactly that size,
+
+98
+00:05:08,060 --> 00:05:11,190
+no matter what border or padding?
+
+99
+00:05:11,190 --> 00:05:12,980
+Well, actually of course
+
+100
+00:05:12,980 --> 00:05:16,540
+we can do that simply by adding a little property
+
+101
+00:05:16,540 --> 00:05:20,670
+to the element, which is called box sizing.
+
+102
+00:05:20,670 --> 00:05:24,960
+And we set the value of that property to border-box.
+
+103
+00:05:24,960 --> 00:05:27,310
+So that's a nice and simple trick
+
+104
+00:05:27,310 --> 00:05:31,400
+that actually every single CSS developer uses.
+
+105
+00:05:31,400 --> 00:05:33,770
+So it would be completely impossible
+
+106
+00:05:33,770 --> 00:05:35,510
+to build large layouts
+
+107
+00:05:35,510 --> 00:05:38,970
+without using box sizing border box.
+
+108
+00:05:38,970 --> 00:05:42,420
+So again, the default way of the box model
+
+109
+00:05:42,420 --> 00:05:45,110
+actually doesn't make any sense at all.
+
+110
+00:05:45,110 --> 00:05:48,250
+So instead everyone simply adds box sizing,
+
+111
+00:05:48,250 --> 00:05:50,560
+border-box to all elements,
+
+112
+00:05:50,560 --> 00:05:53,320
+which will then forever fix the kind of problems
+
+113
+00:05:53,320 --> 00:05:55,770
+that we just experienced.
+
+114
+00:05:55,770 --> 00:05:59,020
+So as we can see in this new diagram
+
+115
+00:05:59,020 --> 00:06:02,620
+where box sizing has been set to border box,
+
+116
+00:06:02,620 --> 00:06:06,330
+now the specified width and height goes all the way
+
+117
+00:06:06,330 --> 00:06:08,340
+from one side of the border
+
+118
+00:06:08,340 --> 00:06:10,530
+to the opposite side of the border,
+
+119
+00:06:10,530 --> 00:06:14,500
+including of course the content area and the padding.
+
+120
+00:06:14,500 --> 00:06:18,170
+And so now the final width and height calculations
+
+121
+00:06:18,170 --> 00:06:19,760
+are very simple.
+
+122
+00:06:19,760 --> 00:06:22,750
+There's actually nothing left to calculate.
+
+123
+00:06:22,750 --> 00:06:26,360
+So the final width of any element will simply be
+
+124
+00:06:26,360 --> 00:06:29,860
+exactly the width that we define in our code,
+
+125
+00:06:29,860 --> 00:06:32,460
+no matter the padding and borders.
+
+126
+00:06:32,460 --> 00:06:35,490
+And the same of course goes for the height.
+
+127
+00:06:35,490 --> 00:06:38,750
+So if we now define some paddings or borders,
+
+128
+00:06:38,750 --> 00:06:42,570
+they will not get added to the dimensions of the box,
+
+129
+00:06:42,570 --> 00:06:46,650
+which really makes our lives so much easier.
+
+130
+00:06:46,650 --> 00:06:48,310
+Now, what this also means
+
+131
+00:06:48,310 --> 00:06:51,470
+at the same time is that padding and borders
+
+132
+00:06:51,470 --> 00:06:55,300
+that we do specify will not reduce the inner width
+
+133
+00:06:55,300 --> 00:06:59,270
+of the content area, but that's usually not a problem.
+
+134
+00:06:59,270 --> 00:07:00,103
+Okay.
+
+135
+00:07:00,103 --> 00:07:02,520
+And so now let's go back to our code
+
+136
+00:07:02,520 --> 00:07:04,553
+and actually apply this property.
+
+137
+00:07:05,980 --> 00:07:06,950
+Okay.
+
+138
+00:07:06,950 --> 00:07:10,970
+And so let's now do exactly what I showed you in the slide
+
+139
+00:07:10,970 --> 00:07:15,970
+and set box sizing to border box.
+
+140
+00:07:16,130 --> 00:07:17,100
+And by the way,
+
+141
+00:07:17,100 --> 00:07:21,190
+the default behavior is actually called content box.
+
+142
+00:07:21,190 --> 00:07:25,290
+Okay. But of course what we want is border box.
+
+143
+00:07:25,290 --> 00:07:27,370
+And so if we save this now again,
+
+144
+00:07:27,370 --> 00:07:30,460
+we should see that problem fixed.
+
+145
+00:07:30,460 --> 00:07:31,483
+And indeed.
+
+146
+00:07:32,450 --> 00:07:33,483
+Now it works.
+
+147
+00:07:34,690 --> 00:07:37,703
+So if we check out our box model, now,
+
+148
+00:07:39,910 --> 00:07:43,110
+of course the entire site,
+
+149
+00:07:43,110 --> 00:07:45,970
+then you'll see that the width of the content area
+
+150
+00:07:45,970 --> 00:07:49,120
+is no longer the 300 that we defined,
+
+151
+00:07:49,120 --> 00:07:52,330
+but instead the entire width of the element
+
+152
+00:07:52,330 --> 00:07:56,730
+is this 220 plus 40 plus this 40,
+
+153
+00:07:56,730 --> 00:07:59,010
+which if we add it all together,
+
+154
+00:07:59,010 --> 00:08:01,980
+that makes exactly 300 pixels,
+
+155
+00:08:01,980 --> 00:08:05,340
+which is the width that we defined
+
+156
+00:08:05,340 --> 00:08:07,560
+for this element right here.
+
+157
+00:08:07,560 --> 00:08:08,500
+Okay.
+
+158
+00:08:08,500 --> 00:08:12,000
+So that's exactly what I was saying by the end of the slide
+
+159
+00:08:12,000 --> 00:08:13,450
+I just showed you,
+
+160
+00:08:13,450 --> 00:08:16,590
+so that when we add some padding to an element,
+
+161
+00:08:16,590 --> 00:08:19,623
+then that will subtract from the content area.
+
+162
+00:08:20,560 --> 00:08:21,393
+Right?
+
+163
+00:08:22,530 --> 00:08:27,530
+And so again, the width of the content area is now only 220,
+
+164
+00:08:27,900 --> 00:08:29,790
+but that's not a problem at all
+
+165
+00:08:29,790 --> 00:08:32,100
+because what we're really interested in
+
+166
+00:08:32,100 --> 00:08:35,280
+is the width of the entire element itself.
+
+167
+00:08:35,280 --> 00:08:37,373
+And so that is now exactly the 300
+
+168
+00:08:37,373 --> 00:08:38,663
+that we specified,
+
+169
+00:08:39,559 --> 00:08:44,560
+because otherwise, let's just toggle it off one more time.
+
+170
+00:08:45,070 --> 00:08:46,033
+Then you'll see down here
+
+171
+00:08:46,033 --> 00:08:48,990
+that we are back to having the 300 applied
+
+172
+00:08:48,990 --> 00:08:50,360
+to the content area
+
+173
+00:08:50,360 --> 00:08:53,593
+and then 40 on each side on top of that.
+
+174
+00:08:55,170 --> 00:08:56,760
+So that's not what we want
+
+175
+00:08:56,760 --> 00:08:59,263
+and so here we fix that.
+
+176
+00:09:00,350 --> 00:09:01,183
+Nice.
+
+177
+00:09:02,040 --> 00:09:05,630
+Now we always want the box model to work like this
+
+178
+00:09:05,630 --> 00:09:09,550
+by default on every single element from here on.
+
+179
+00:09:09,550 --> 00:09:13,520
+And so basically what we want is for this property here
+
+180
+00:09:13,520 --> 00:09:17,560
+to be applied to every single element on the page.
+
+181
+00:09:17,560 --> 00:09:19,890
+So how can we do that?
+
+182
+00:09:19,890 --> 00:09:22,110
+Well, I will cut it from here
+
+183
+00:09:22,110 --> 00:09:27,110
+and then I will put it here in the universal selector.
+
+184
+00:09:28,650 --> 00:09:29,610
+Okay.
+
+185
+00:09:29,610 --> 00:09:32,110
+And I'm not putting it here in the body
+
+186
+00:09:32,110 --> 00:09:35,100
+because box sizing is not one of these properties
+
+187
+00:09:35,100 --> 00:09:36,960
+that gets inherited,
+
+188
+00:09:36,960 --> 00:09:39,800
+so we can't put it on the body selector,
+
+189
+00:09:39,800 --> 00:09:42,640
+but instead on the universal selector.
+
+190
+00:09:42,640 --> 00:09:45,730
+And so now along with margin and padding,
+
+191
+00:09:45,730 --> 00:09:48,530
+this box sizing border box gets applied
+
+192
+00:09:48,530 --> 00:09:50,033
+to every single element.
+
+193
+00:09:50,900 --> 00:09:53,773
+So I'll give it a save and it still works.
+
+194
+00:09:55,110 --> 00:09:57,500
+So something like this here is
+
+195
+00:09:57,500 --> 00:10:01,060
+what most developers actually add to their CSS.
+
+196
+00:10:01,060 --> 00:10:03,890
+So a simple global reset like this,
+
+197
+00:10:03,890 --> 00:10:06,790
+and then basically enabling this better behavior
+
+198
+00:10:06,790 --> 00:10:10,360
+of the box model on every single element.
+
+199
+00:10:10,360 --> 00:10:11,510
+Okay.
+
+200
+00:10:11,510 --> 00:10:13,650
+With that we're actually done.
+
+201
+00:10:13,650 --> 00:10:17,600
+I'm just quickly going to add some margin here to the bottom
+
+202
+00:10:17,600 --> 00:10:19,240
+of this h4,
+
+203
+00:10:19,240 --> 00:10:22,393
+since we are talking about fixing spacing.
+
+204
+00:10:24,670 --> 00:10:28,633
+Margin-bottom, let's say 20 pixels,
+
+205
+00:10:30,080 --> 00:10:33,263
+or let's make it a bit more and say 30 pixels.
+
+206
+00:10:34,260 --> 00:10:38,490
+Great. So you just learned one more very important thing
+
+207
+00:10:38,490 --> 00:10:42,350
+on your journey of becoming a CSS developer.
+
+208
+00:10:42,350 --> 00:10:44,240
+So what I just showed you again,
+
+209
+00:10:44,240 --> 00:10:48,740
+is something that every single CSS developer does and uses.
+
+210
+00:10:48,740 --> 00:10:50,510
+And so it was really important
+
+211
+00:10:50,510 --> 00:10:53,010
+that you learned about this important trick.
+
+212
+00:10:53,010 --> 00:10:54,700
+And it's also important
+
+213
+00:10:54,700 --> 00:10:57,180
+that you really understand how it works.
+
+214
+00:10:57,180 --> 00:11:00,330
+So make sure that you maybe review that slide
+
+215
+00:11:00,330 --> 00:11:04,280
+that I showed you and review the code that we wrote here,
+
+216
+00:11:04,280 --> 00:11:07,740
+and then you are ready for yet another coding challenge.
+
+217
+00:11:07,740 --> 00:11:10,193
+So hopefully I see you there very soon.
+

@@ -1,0 +1,376 @@
+1
+00:00:01,600 --> 00:00:05,200
+This entire section is all about building layouts.
+
+2
+00:00:05,200 --> 00:00:08,060
+And so before we actually start doing that,
+
+3
+00:00:08,060 --> 00:00:11,110
+let's talk about what layout actually means.
+
+4
+00:00:11,110 --> 00:00:15,330
+And also the three major ways in which we can build layouts
+
+5
+00:00:15,330 --> 00:00:16,853
+in CSS right now.
+
+6
+00:00:19,750 --> 00:00:24,580
+So in web design and web development, when we say layout,
+
+7
+00:00:24,580 --> 00:00:29,580
+what we mean is basically the way that text images and all
+
+8
+00:00:29,580 --> 00:00:34,520
+the other content is placed and arranged on the webpage.
+
+9
+00:00:34,520 --> 00:00:35,950
+So here on the right side,
+
+10
+00:00:35,950 --> 00:00:39,530
+I have an example of a very simple website and
+
+11
+00:00:39,530 --> 00:00:42,390
+there are a couple of pieces of content,
+
+12
+00:00:42,390 --> 00:00:46,860
+and clearly they are arranged in a certain way, right?
+
+13
+00:00:46,860 --> 00:00:48,220
+And so again,
+
+14
+00:00:48,220 --> 00:00:51,710
+the way in which they are arranged and placed here on this
+
+15
+00:00:51,710 --> 00:00:56,370
+website is the layout of the design, essentially.
+
+16
+00:00:56,370 --> 00:00:58,760
+So the layout gives this page,
+
+17
+00:00:58,760 --> 00:01:01,280
+what we call a visual structure,
+
+18
+00:01:01,280 --> 00:01:05,790
+and then into that structure, we can place the content.
+
+19
+00:01:05,790 --> 00:01:09,050
+Now, one of the main jobs as front-end developers.
+
+20
+00:01:09,050 --> 00:01:13,390
+So as HTML, CSS and JavaScript developers
+
+21
+00:01:13,390 --> 00:01:15,120
+is to build layouts,
+
+22
+00:01:15,120 --> 00:01:18,660
+which is the reason why we have an entire section on
+
+23
+00:01:18,660 --> 00:01:20,500
+building layouts alone.
+
+24
+00:01:20,500 --> 00:01:23,730
+So according to this definition of layout,
+
+25
+00:01:23,730 --> 00:01:27,330
+building a layout means to arrange page elements
+
+26
+00:01:27,330 --> 00:01:29,900
+into some kind of visual structure,
+
+27
+00:01:29,900 --> 00:01:33,120
+instead of simply having all of four elements.
+
+28
+00:01:33,120 --> 00:01:38,090
+So all of our content basically placed one after another.
+
+29
+00:01:38,090 --> 00:01:41,170
+Just imagine that in this example website,
+
+30
+00:01:41,170 --> 00:01:44,730
+all these seven pieces of content would simply be laid out
+
+31
+00:01:44,730 --> 00:01:46,920
+one after the other.
+
+32
+00:01:46,920 --> 00:01:50,090
+That wouldn't look very interesting visually, right?
+
+33
+00:01:50,090 --> 00:01:53,430
+And it also would it make a lot harder to actually
+
+34
+00:01:53,430 --> 00:01:57,180
+understand the content that is being transmitted here.
+
+35
+00:01:57,180 --> 00:02:01,150
+So layout exists for a reason because it makes our sites
+
+36
+00:02:01,150 --> 00:02:02,690
+easier to understand
+
+37
+00:02:02,690 --> 00:02:05,253
+and also makes it visually more pleasing.
+
+38
+00:02:06,702 --> 00:02:10,370
+Now, there are basically two types of layouts
+
+39
+00:02:10,370 --> 00:02:14,210
+which are page layout and component layout.
+
+40
+00:02:14,210 --> 00:02:17,700
+So page layout is basically what I've been talking about up
+
+41
+00:02:17,700 --> 00:02:21,060
+until this point, which is laying out the elements,
+
+42
+00:02:21,060 --> 00:02:23,310
+so the big pieces of content
+
+43
+00:02:23,310 --> 00:02:27,410
+inside of a webpage or a website.
+
+44
+00:02:27,410 --> 00:02:28,870
+Now on the other hand,
+
+45
+00:02:28,870 --> 00:02:32,900
+these bigger page layouts are themselves made of of
+
+46
+00:02:32,900 --> 00:02:34,900
+components like this one.
+
+47
+00:02:34,900 --> 00:02:38,510
+And these components themselves need to have some kind of
+
+48
+00:02:38,510 --> 00:02:41,730
+layout because these components themselves
+
+49
+00:02:41,730 --> 00:02:44,440
+are made out of smaller pieces of content,
+
+50
+00:02:44,440 --> 00:02:47,930
+which also need to be arranged in some kind of way.
+
+51
+00:02:47,930 --> 00:02:51,380
+And so we can say that components themselves
+
+52
+00:02:51,380 --> 00:02:53,470
+also have a layout.
+
+53
+00:02:53,470 --> 00:02:54,730
+So once again,
+
+54
+00:02:54,730 --> 00:02:58,930
+we wouldn't want to have these 12 pieces of content simply
+
+55
+00:02:58,930 --> 00:03:01,830
+laid out one after another, right.
+
+56
+00:03:01,830 --> 00:03:03,690
+That wouldn't make a lot of sense.
+
+57
+00:03:03,690 --> 00:03:06,660
+And so therefore we also need to give the smaller
+
+58
+00:03:06,660 --> 00:03:09,570
+components, some kind of layout.
+
+59
+00:03:09,570 --> 00:03:13,330
+Okay, so now that we know what layouts are
+
+60
+00:03:13,330 --> 00:03:16,670
+and what type of layouts we can build, now,
+
+61
+00:03:16,670 --> 00:03:20,373
+let's see how we can actually build them with CSS.
+
+62
+00:03:21,900 --> 00:03:25,291
+And the first technique of building layouts in CSS
+
+63
+00:03:25,291 --> 00:03:27,960
+is using float layouts,
+
+64
+00:03:27,960 --> 00:03:31,380
+which is basically the old way of building layouts
+
+65
+00:03:31,380 --> 00:03:34,670
+using the float CSS property.
+
+66
+00:03:34,670 --> 00:03:38,600
+Now these types of layouts are quickly getting replaced by
+
+67
+00:03:38,600 --> 00:03:42,830
+newer technologies, such as Flexbox and CSS grid,
+
+68
+00:03:42,830 --> 00:03:46,220
+but in some cases they are still being used and especially
+
+69
+00:03:46,220 --> 00:03:48,030
+on all their websites.
+
+70
+00:03:48,030 --> 00:03:51,350
+So we will still learn how to build float layouts,
+
+71
+00:03:51,350 --> 00:03:52,220
+just so you know,
+
+72
+00:03:52,220 --> 00:03:56,120
+how they work in case you ever see one at some point in your
+
+73
+00:03:56,120 --> 00:03:58,820
+career, for example, when you're working on
+
+74
+00:03:58,820 --> 00:04:01,980
+an older website, but for the main part,
+
+75
+00:04:01,980 --> 00:04:05,540
+we will then quickly move on to one of the newer ways of
+
+76
+00:04:05,540 --> 00:04:08,690
+building layouts, which is using Flexbox.
+
+77
+00:04:09,635 --> 00:04:14,110
+So Flexbox is one of the modern ways of laying out elements.
+
+78
+00:04:14,110 --> 00:04:16,000
+And in the case of Flexbox,
+
+79
+00:04:16,000 --> 00:04:19,760
+it is perfect for building one dimensional layouts.
+
+80
+00:04:19,760 --> 00:04:21,579
+So basically a layout,
+
+81
+00:04:21,579 --> 00:04:25,900
+which is just a row and all without using floats.
+
+82
+00:04:25,900 --> 00:04:30,470
+So Flexbox might be perfect for simpler component layouts,
+
+83
+00:04:30,470 --> 00:04:33,320
+just like we saw in the last slide.
+
+84
+00:04:33,320 --> 00:04:36,640
+Then the other modern way of laying out elements
+
+85
+00:04:36,640 --> 00:04:40,037
+is CSS grid. So with CSS grid,
+
+86
+00:04:40,037 --> 00:04:45,037
+we can actually build complete two dimensional layout,
+
+87
+00:04:45,090 --> 00:04:49,910
+which is perfect for big page layouts and also more complex
+
+88
+00:04:49,910 --> 00:04:54,000
+components. Like the one that we saw in the last slide.
+
+89
+00:04:54,000 --> 00:04:58,900
+So Flexbox and CSS grid have completely revolutionized the
+
+90
+00:04:58,900 --> 00:05:03,050
+way in which we build layouts in CSS right now.
+
+91
+00:05:03,050 --> 00:05:06,950
+And so we will spend most of the course learning them and
+
+92
+00:05:06,950 --> 00:05:10,800
+using them in our big website project later.
+
+93
+00:05:10,800 --> 00:05:14,070
+But for now let's actually start quickly learning float
+
+94
+00:05:14,070 --> 00:05:15,953
+layouts in the next lecture.
+

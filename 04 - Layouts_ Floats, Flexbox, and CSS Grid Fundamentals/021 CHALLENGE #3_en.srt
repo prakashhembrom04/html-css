@@ -1,0 +1,556 @@
+1
+00:00:01,440 --> 00:00:03,910
+So to wrap up this section,
+
+2
+00:00:03,910 --> 00:00:06,803
+here is coding challenge number three.
+
+3
+00:00:08,340 --> 00:00:11,397
+And I hope you're not yet tired of this example
+
+4
+00:00:11,397 --> 00:00:15,393
+because we will work with it one more time here.
+
+5
+00:00:16,250 --> 00:00:17,980
+So in the last challenge,
+
+6
+00:00:17,980 --> 00:00:21,530
+you built this layout here using flexbox.
+
+7
+00:00:21,530 --> 00:00:23,360
+And so as you might've guessed,
+
+8
+00:00:23,360 --> 00:00:28,360
+now it's time to build the exact same layout using CSS Grid.
+
+9
+00:00:28,730 --> 00:00:30,200
+Okay.
+
+10
+00:00:30,200 --> 00:00:32,920
+Now, when we built this with flexbox,
+
+11
+00:00:32,920 --> 00:00:35,510
+we wrapped these three columns here,
+
+12
+00:00:35,510 --> 00:00:39,390
+so these three elements into one container element,
+
+13
+00:00:39,390 --> 00:00:42,520
+and we then used flexbox only on that.
+
+14
+00:00:42,520 --> 00:00:46,560
+So a little bit, like we also did in our block post project,
+
+15
+00:00:46,560 --> 00:00:50,010
+right, but now I actually want you to go ahead
+
+16
+00:00:50,010 --> 00:00:55,010
+and remove that container div and basically use all of this,
+
+17
+00:00:55,840 --> 00:00:59,510
+so the entire element here, as the flex container.
+
+18
+00:00:59,510 --> 00:01:00,780
+Okay.
+
+19
+00:01:00,780 --> 00:01:03,450
+Now, another important hint that I need to give you
+
+20
+00:01:03,450 --> 00:01:05,600
+as you start designing your grid,
+
+21
+00:01:05,600 --> 00:01:08,970
+is that this here is going to be the first column.
+
+22
+00:01:08,970 --> 00:01:11,170
+So this image, right?
+
+23
+00:01:11,170 --> 00:01:15,290
+And so remember that this one here has a fixed width
+
+24
+00:01:15,290 --> 00:01:19,950
+of 250 pixels, and so probably you should adjust
+
+25
+00:01:19,950 --> 00:01:22,320
+your column to that.
+
+26
+00:01:22,320 --> 00:01:23,290
+Okay.
+
+27
+00:01:23,290 --> 00:01:27,370
+So just keep that in mind and yeah,
+
+28
+00:01:27,370 --> 00:01:30,970
+that's actually all you need to do for this challenge.
+
+29
+00:01:30,970 --> 00:01:34,810
+So the minor stuff that we did before with flexbox,
+
+30
+00:01:34,810 --> 00:01:38,320
+and what I mean is this here, and the colors,
+
+31
+00:01:38,320 --> 00:01:40,450
+so that I want you to leave intact.
+
+32
+00:01:40,450 --> 00:01:44,410
+So keep using flexbox for that and use CSS Grid only
+
+33
+00:01:44,410 --> 00:01:45,966
+for the over layout here,
+
+34
+00:01:45,966 --> 00:01:47,741
+which is actually two dimensional.
+
+35
+00:01:47,741 --> 00:01:52,490
+And so CSS grid is a good fit for that.
+
+36
+00:01:52,490 --> 00:01:55,300
+So as always, take all the time that you need,
+
+37
+00:01:55,300 --> 00:01:58,313
+and then meet me back here once you are done.
+
+38
+00:02:01,530 --> 00:02:06,530
+All right, and I am 100% sure that was fun for you.
+
+39
+00:02:07,700 --> 00:02:12,490
+So, as I said, let's start by removing this container here
+
+40
+00:02:13,370 --> 00:02:16,223
+together with its closing tag, of course.
+
+41
+00:02:17,570 --> 00:02:22,570
+Then let's go up here and remove all the traces of flexbox
+
+42
+00:02:22,600 --> 00:02:24,260
+in this layout.
+
+43
+00:02:24,260 --> 00:02:25,780
+And actually let's also get rid
+
+44
+00:02:25,780 --> 00:02:28,563
+of this stupid, clear fix class.
+
+45
+00:02:29,930 --> 00:02:32,660
+So here we have our container,
+
+46
+00:02:32,660 --> 00:02:36,030
+which right now is set to display flex.
+
+47
+00:02:36,030 --> 00:02:41,030
+So let's change that to display grid like this.
+
+48
+00:02:41,860 --> 00:02:45,693
+And then we also need to specify, of course, our columns.
+
+49
+00:02:47,170 --> 00:02:50,053
+So grid, template,
+
+50
+00:02:51,800 --> 00:02:52,980
+columns.
+
+51
+00:02:52,980 --> 00:02:57,710
+And then remember what I said about our first column.
+
+52
+00:02:57,710 --> 00:03:00,690
+So the first column we want this image here to be,
+
+53
+00:03:00,690 --> 00:03:03,830
+which has a width of 250.
+
+54
+00:03:03,830 --> 00:03:07,670
+So it's basically a fixed width that we want to maintain,
+
+55
+00:03:07,670 --> 00:03:12,670
+and so let's make our first column also exactly 250 pixels.
+
+56
+00:03:13,130 --> 00:03:14,860
+And then the other two columns,
+
+57
+00:03:14,860 --> 00:03:18,550
+we want them both to occupy at the exact same space
+
+58
+00:03:18,550 --> 00:03:22,500
+and they should also fill up all the remaining space.
+
+59
+00:03:22,500 --> 00:03:27,500
+And so therefore, we give both of them the width of one FR.
+
+60
+00:03:27,710 --> 00:03:31,143
+And so with this, let's wait for it.
+
+61
+00:03:33,220 --> 00:03:35,900
+Well, that didn't really do anything.
+
+62
+00:03:35,900 --> 00:03:37,100
+Oh, and of course,
+
+63
+00:03:37,100 --> 00:03:40,290
+because we just removed the container class.
+
+64
+00:03:40,290 --> 00:03:44,563
+and so this code should actually be on the product itself.
+
+65
+00:03:45,960 --> 00:03:48,010
+So where is that?
+
+66
+00:03:48,010 --> 00:03:49,223
+Ah, yeah, right here.
+
+67
+00:03:51,664 --> 00:03:54,490
+So let's see, ah, beautiful.
+
+68
+00:03:54,490 --> 00:03:56,513
+That looks a lot better.
+
+69
+00:03:57,360 --> 00:04:01,091
+Well, it's far from being perfect, but it's something.
+
+70
+00:04:01,091 --> 00:04:02,690
+Right?
+
+71
+00:04:02,690 --> 00:04:05,720
+So let's get rid of this container code,
+
+72
+00:04:05,720 --> 00:04:09,380
+which made us do this small mistake.
+
+73
+00:04:09,380 --> 00:04:13,000
+And now let's think about this title here
+
+74
+00:04:13,000 --> 00:04:14,660
+and also about the button,
+
+75
+00:04:14,660 --> 00:04:17,930
+which are not one of these three columns.
+
+76
+00:04:17,930 --> 00:04:19,140
+Right?
+
+77
+00:04:19,140 --> 00:04:22,530
+So what we want to happen to them is that they should
+
+78
+00:04:22,530 --> 00:04:26,937
+stretch all the way from the start to the end, right?
+
+79
+00:04:29,040 --> 00:04:33,770
+So the title is exactly this one, so product title.
+
+80
+00:04:33,770 --> 00:04:38,567
+And so here we say grid column one,
+
+81
+00:04:40,110 --> 00:04:41,123
+two minus one.
+
+82
+00:04:42,200 --> 00:04:45,400
+So that's a trick that hopefully, you know by now.
+
+83
+00:04:45,400 --> 00:04:49,350
+And so let's actually copy it and use the same thing
+
+84
+00:04:49,350 --> 00:04:50,503
+on the button.
+
+85
+00:04:51,570 --> 00:04:55,423
+So this one should do the exact same thing, right?
+
+86
+00:04:56,740 --> 00:04:59,280
+So button, let's add that there
+
+87
+00:04:59,280 --> 00:05:00,663
+and beautiful.
+
+88
+00:05:01,560 --> 00:05:05,490
+Now here, we still have some gaps that we do not want
+
+89
+00:05:05,490 --> 00:05:08,510
+and that's because we simply maintained
+
+90
+00:05:08,510 --> 00:05:12,330
+the get property that we had before from flexbox.
+
+91
+00:05:12,330 --> 00:05:17,187
+But instead it is now column gap and actually,
+
+92
+00:05:19,050 --> 00:05:20,820
+we're already done.
+
+93
+00:05:20,820 --> 00:05:24,150
+So that was a bit too easy, maybe.
+
+94
+00:05:24,150 --> 00:05:26,870
+So basically the main trick here
+
+95
+00:05:26,870 --> 00:05:30,000
+in order to remain this width was simply
+
+96
+00:05:30,000 --> 00:05:34,570
+to give this column the exact same size as the image,
+
+97
+00:05:34,570 --> 00:05:37,380
+so as we already had done before here.
+
+98
+00:05:37,380 --> 00:05:41,220
+And then everything else simply happened automatically.
+
+99
+00:05:41,220 --> 00:05:46,220
+So this row here basically also has the height of 250 pixels
+
+100
+00:05:47,130 --> 00:05:50,730
+because that is the height of the biggest content here.
+
+101
+00:05:50,730 --> 00:05:51,763
+So this image,
+
+102
+00:05:52,990 --> 00:05:53,850
+right?
+
+103
+00:05:53,850 --> 00:05:56,530
+And just to quickly inspect that.
+
+104
+00:05:56,530 --> 00:05:59,870
+So I always like to use this grid overlay
+
+105
+00:05:59,870 --> 00:06:03,343
+because it makes it so clear what exactly is happening.
+
+106
+00:06:04,370 --> 00:06:08,760
+And so again, we can see here that this entire row,
+
+107
+00:06:08,760 --> 00:06:12,313
+so all the elements here do have a width of,
+
+108
+00:06:13,155 --> 00:06:17,480
+or actually a height, of 250 and this one does not,
+
+109
+00:06:17,480 --> 00:06:19,930
+but that's simply because there is not enough content
+
+110
+00:06:19,930 --> 00:06:21,280
+in there.
+
+111
+00:06:21,280 --> 00:06:22,930
+But anyway, with this,
+
+112
+00:06:22,930 --> 00:06:26,400
+we actually now finished the topic of CSS Grid
+
+113
+00:06:26,400 --> 00:06:29,140
+and also this entire big section
+
+114
+00:06:29,140 --> 00:06:32,310
+on building layouts with CSS.
+
+115
+00:06:32,310 --> 00:06:36,090
+So this was quite a fundamental and important section
+
+116
+00:06:36,090 --> 00:06:39,670
+that sets the stage for the rest of the course.
+
+117
+00:06:39,670 --> 00:06:42,590
+And so I should warn you once again, that,
+
+118
+00:06:42,590 --> 00:06:45,660
+in order to advance to the rest of the course now,
+
+119
+00:06:45,660 --> 00:06:48,100
+you should make sure that you really understand
+
+120
+00:06:48,100 --> 00:06:50,280
+this material quite well.
+
+121
+00:06:50,280 --> 00:06:51,990
+So it doesn't need to be perfect.
+
+122
+00:06:51,990 --> 00:06:55,090
+You don't need to know all the properties by heart,
+
+123
+00:06:55,090 --> 00:06:57,860
+again, but you should at least understand
+
+124
+00:06:57,860 --> 00:07:00,750
+how these technologies that we learned work
+
+125
+00:07:00,750 --> 00:07:03,920
+and a little bit about how you can use them.
+
+126
+00:07:03,920 --> 00:07:07,170
+So take all the time that you need in order to practice
+
+127
+00:07:07,170 --> 00:07:08,930
+as much as you can,
+
+128
+00:07:08,930 --> 00:07:13,690
+and only then let's move on together to our next section,
+
+129
+00:07:13,690 --> 00:07:16,630
+which is actually one of the most exciting one,
+
+130
+00:07:16,630 --> 00:07:20,030
+I think, at least in this entire course.
+
+131
+00:07:20,030 --> 00:07:22,130
+So we're going to talk about web design
+
+132
+00:07:22,130 --> 00:07:25,740
+and learn a lot of different rules and guidelines
+
+133
+00:07:25,740 --> 00:07:28,860
+and we will actually also apply them immediately
+
+134
+00:07:28,860 --> 00:07:31,090
+to a new project.
+
+135
+00:07:31,090 --> 00:07:36,070
+So it's time to say goodbye to our block post project here
+
+136
+00:07:36,070 --> 00:07:37,570
+because in the next section,
+
+137
+00:07:37,570 --> 00:07:39,980
+we will start a new one.
+
+138
+00:07:39,980 --> 00:07:43,690
+But anyway, enough talk and I see you soon
+
+139
+00:07:43,690 --> 00:07:45,453
+in that next section.
+

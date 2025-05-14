@@ -1,0 +1,80 @@
+1
+00:00:00,253 --> 00:00:02,336
+(typing)
+
+2
+00:00:04,543 --> 00:00:07,939
+(upbeat music)
+
+3
+00:00:07,939 --> 00:00:11,890
+All right, welcome back to the next section
+
+4
+00:00:11,890 --> 00:00:16,343
+where we will now take your CSS skills to the next level.
+
+5
+00:00:17,480 --> 00:00:20,950
+So up until this point, we have used CSS
+
+6
+00:00:20,950 --> 00:00:25,460
+to add visual styles and spacing to elements.
+
+7
+00:00:25,460 --> 00:00:30,460
+However, CSS can be used for much more than just that.
+
+8
+00:00:30,480 --> 00:00:33,400
+And in fact, one of the main applications
+
+9
+00:00:33,400 --> 00:00:36,120
+of CSS is to build layouts.
+
+10
+00:00:36,120 --> 00:00:39,370
+And so that's what we're gonna do next.
+
+11
+00:00:39,370 --> 00:00:41,550
+So in this section, you will learn
+
+12
+00:00:41,550 --> 00:00:44,410
+how to build layouts using floats
+
+13
+00:00:44,410 --> 00:00:47,770
+and also using two really modern technologies,
+
+14
+00:00:47,770 --> 00:00:51,930
+which are called flexbox and CSS Grid.
+
+15
+00:00:51,930 --> 00:00:54,010
+And in fact, this is gonna be
+
+16
+00:00:54,010 --> 00:00:58,040
+one of the most important sections of this course.
+
+17
+00:00:58,040 --> 00:01:00,810
+And so really make sure to take all the time
+
+18
+00:01:00,810 --> 00:01:03,010
+that you need to understand it.
+
+19
+00:01:03,010 --> 00:01:06,440
+That's really important, but anyway,
+
+20
+00:01:06,440 --> 00:01:09,063
+let's get back to work right away.
+
